@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #pic {
+            position: relative;
+        }
+    </style>
+
+</head>
+<body onload="a()">
+    <img src="o1.jpg" alt="Alternate Text" id="pic" />
+
+
+    <script>
+        "use strict"
+
+        let k = 5;
+        let i = 20;
+
+        function a() {
+            document.getElementById("pic").style.left = i + "px";
+            i += k;
+            if (i > 900 || i < 10) {
+                k = -k;
+            }
+            setTimeout("a()", 30);
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
